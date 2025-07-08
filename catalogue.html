@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogue – AmmuNation Nord</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        body {
+            font-family: 'Staatliches', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 text-gray-100 text-base">
+
+<!-- Header -->
+<header class="bg-black border-b border-zinc-700">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Logo + Titre -->
+        <div class="flex items-center gap-4">
+            <a href="index.html" aria-label="Accueil">
+                <img src="images/ammu_nord.png" alt="Logo AmmuNation" class="h-10 w-auto">
+            </a>
+            <a href="index.html" class="text-2xl text-[#27ae60] hover:text-[#2ecc71] transition">
+                AmmuNation - Blaine County (Nord)
+            </a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex items-center gap-6 text-base uppercase tracking-wide">
+            <a href="index.html" class="hover:text-[#27ae60]">Accueil</a>
+            <a href="catalogue.html" class="hover:text-[#27ae60]">Catalogue</a>
+
+            <!-- Menu Permis -->
+
+            <a href="permis_port_armes.html" class="hover:text-[#27ae60]">Permis Port d'Armes</a>
+            <a href="permis_chasse.html" class="hover:text-[#27ae60]">Permis de Chasse</a>
+
+            <!-- Menu Contact -->
+            <a href="contact.html" class="hover:text-[#27ae60]">Contact</a>
+        </nav>
+    </div>
+</header>
+
+
+<!-- Catalogue Hero -->
+<section class="h-64 bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/ammu_nord_banner.png');">
+    <div class="bg-black bg-opacity-70 p-6 rounded">
+        <h1 class="text-4xl font-bold text-[#27ae60]">Catalogue</h1>
+        <p class="text-xl mt-2">Tous nos produits en un coup d’œil.</p>
+    </div>
+</section>
+
+<!-- Catalogue Content -->
+<main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+
+    <!-- Armes Blanches -->
+    <section>
+        <h2 class="text-2xl mb-6 text-[#27ae60] border-b border-zinc-700 pb-2">🔪 ARMES BLANCHES</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>Marteau</div><div class="text-right">4 200$</div>
+            <div>Batte de Baseball</div><div class="text-right">4 000$</div>
+            <div>Dague Antique</div><div class="text-right">15 000$</div>
+            <div>Couteau à cran d'arrêt</div><div class="text-right">6 200$</div>
+            <div>Clé Anglaise</div><div class="text-right">3 900$</div>
+            <div>Club de golf</div><div class="text-right">7 100$</div>
+            <div>Queue de billard</div><div class="text-right">3 800$</div>
+            <div>Katana</div><div class="text-right">16 000$</div>
+            <div>Mégaphone</div><div class="text-right">3 500$</div>
+            <div>Pioche</div><div class="text-right">15 000$</div>
+            <div>Pioche en pierre</div><div class="text-right">15 000$</div>
+        </div>
+    </section>
+
+    <!-- Armes de Poing -->
+    <section>
+        <h2 class="text-2xl mb-6 text-[#27ae60] border-b border-zinc-700 pb-2">🔫 ARMES DE POING</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>Pistolet</div><div class="text-right">48 500$</div>
+            <div>Mousquet</div><div class="text-right">70 000$</div>
+            <div>20 munitions</div><div class="text-right">500$</div>
+            <div>Fusée de détresse</div><div class="text-right">7 500$</div>
+            <div>Parachute</div><div class="text-right">16 000$</div>
+            <div>Feu d'artifice</div><div class="text-right">10 000$</div>
+        </div>
+    </section>
+
+    <!-- Customisation -->
+    <section>
+        <h2 class="text-2xl mb-6 text-[#27ae60] border-b border-zinc-700 pb-2">⚙️ CUSTOMISATION</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>Skins</div><div class="text-right">30 000$</div>
+            <div>Chargeur Standard</div><div class="text-right">1 000$</div>
+            <div>Chargeur Elargi</div><div class="text-right">20 000$</div>
+            <div>Lampe Torche</div><div class="text-right">10 000$</div>
+            <div>Silencieux</div><div class="text-right">5 000$</div>
+            <div>Finition de Luxe</div><div class="text-right">30 000$</div>
+            <div>Lunette holographique</div><div class="text-right">1 000$</div>
+            <div>Poignée</div><div class="text-right">7 000$</div>
+            <div>Lunette Moyenne</div><div class="text-right">1 000$</div>
+            <div>Lunette Grande</div><div class="text-right">1 000$</div>
+            <div>Frein de Bouche</div><div class="text-right">1 000$</div>
+            <div>Canon Standard</div><div class="text-right">1 000$</div>
+            <div>Canon Lourd</div><div class="text-right">16 000$</div>
+            <div>Tout Camo H6</div><div class="text-right">1 000$</div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-zinc-950 text-gray-500 text-center py-6 text-sm">
+    <p>&copy; 2025 AmmuNation Blaine County – Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

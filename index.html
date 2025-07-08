@@ -1,10 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AmmuNation - Blaine County (Nord)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    body {
+      font-family: 'Staatliches', sans-serif;
+    }
+  </style>
 </head>
-<body>
-$END$
+<body class="bg-zinc-900 text-gray-100 text-base">
+
+<!-- Header -->
+<header class="bg-black border-b border-zinc-700">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo + Titre -->
+    <div class="flex items-center gap-4">
+      <a href="index.html" aria-label="Accueil">
+        <img src="images/ammu_nord.png" alt="Logo AmmuNation" class="h-10 w-auto">
+      </a>
+      <a href="index.html" class="text-2xl text-[#27ae60] hover:text-[#2ecc71] transition">
+        AmmuNation - Blaine County (Nord)
+      </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex items-center gap-6 text-base uppercase tracking-wide">
+      <a href="index.html" class="hover:text-[#27ae60]">Accueil</a>
+      <a href="catalogue.html" class="hover:text-[#27ae60]">Catalogue</a>
+
+      <!-- Menu Permis -->
+
+      <a href="permis_port_armes.html" class="hover:text-[#27ae60]">Permis Port d'Armes</a>
+      <a href="permis_chasse.html" class="hover:text-[#27ae60]">Permis de Chasse</a>
+
+      <!-- Menu Contact -->
+      <a href="contact.html" class="hover:text-[#27ae60]">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- Hero -->
+<section class="h-[70vh] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/ammu_nord_banner.png');">
+  <div class="bg-black bg-opacity-70 p-10 rounded">
+    <h1 class="text-5xl mb-4 text-[#27ae60] font-bold">Bienvenue à l'AmmuNation</h1>
+    <p class="text-xl">Votre sécurité. Notre priorité. Formations & équipement professionnel.</p>
+  </div>
+</section>
+
+<!-- Catalogue -->
+<section class="py-16 px-6 max-w-7xl mx-auto">
+  <h2 class="text-3xl text-center text-[#27ae60] mb-10">Catalogue</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-zinc-800 p-6 rounded shadow hover:shadow-[#27ae60]/50 transition text-center">
+      <h3 class="text-xl text-[#27ae60] font-bold mb-2">Armes Blanches</h3>
+      <p class="text-base text-gray-300">Pour les combats rapprochés, silencieux et efficaces.</p>
+    </div>
+    <div class="bg-zinc-800 p-6 rounded shadow hover:shadow-[#27ae60]/50 transition text-center">
+      <h3 class="text-xl text-[#27ae60] font-bold mb-2">Armes de Poing</h3>
+      <p class="text-base text-gray-300">Discrétion et précision à portée de main.</p>
+    </div>
+    <div class="bg-zinc-800 p-6 rounded shadow hover:shadow-[#27ae60]/50 transition text-center">
+      <h3 class="text-xl text-[#27ae60] font-bold mb-2">Customisation</h3>
+      <p class="text-base text-gray-300">Personnalisez vos armes pour un style et une efficacité uniques.</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10">
+    <a href="catalogue.html" class="inline-block bg-[#27ae60] hover:bg-[#2ecc71] text-black px-6 py-3 rounded-full font-semibold transition">
+      Voir le catalogue complet
+    </a>
+  </div>
+</section>
+
+<!-- Formation PPA -->
+<section class="bg-zinc-900 py-16 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-6">Formation PPA</h2>
+    <p class="text-base text-gray-300 mb-6 leading-relaxed">
+      La formation PPA (Port d’Arme) est indispensable pour les citoyens souhaitant porter une arme en toute légalité. Nos instructeurs agréés vous accompagnent de la théorie à la pratique dans un cadre sécurisé et encadré.
+    </p>
+    <a href="contact.html" class="bg-[#27ae60] hover:bg-[#2ecc71] text-black px-6 py-3 rounded-full font-semibold transition">S'inscrire (nous contacter)</a>
+  </div>
+</section>
+
+<!-- Permis de chasse -->
+<section class="bg-zinc-800 py-16 px-6">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-6">Permis de chasse</h2>
+    <p class="text-base text-gray-300 mb-6 leading-relaxed">
+      Obtenez votre permis de chasse auprès de notre équipe formée. Connaissance des règles, maniement des armes, respect de la nature : tout est couvert dans notre formation complète.
+    </p>
+    <a href="contact.html" class="bg-[#27ae60] hover:bg-[#2ecc71] text-black px-6 py-3 rounded-full font-semibold transition">Faire une demande (nous contacter)</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-zinc-950 text-gray-500 text-center py-6 text-sm">
+  <p>&copy; 2025 AmmuNation Blaine County – Tous droits réservés.</p>
+</footer>
+
 </body>
 </html>
