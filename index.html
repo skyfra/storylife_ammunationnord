@@ -15,7 +15,7 @@
 <body class="bg-zinc-900 text-gray-100 text-base">
 
 <!-- Header -->
-<header class="bg-black border-b border-zinc-700">
+<header class="bg-black border-b border-zinc-700 relative z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
 
     <!-- Logo + Titre -->
@@ -36,12 +36,27 @@
       </svg>
     </button>
 
-    <!-- Nav menu desktop -->
-    <nav class="hidden sm:flex items-center gap-6 text-base uppercase tracking-wide">
+    <!-- Desktop menu -->
+    <nav class="hidden sm:flex items-center gap-6 text-base uppercase tracking-wide relative">
       <a href="index.html" class="hover:text-[#27ae60]">Accueil</a>
       <a href="catalogue.html" class="hover:text-[#27ae60]">Catalogue</a>
-      <a href="permis_port_armes.html" class="hover:text-[#27ae60]">Permis Port d'Armes</a>
-      <a href="permis_chasse.html" class="hover:text-[#27ae60]">Permis de Chasse</a>
+
+      <!-- Dropdown -->
+      <div class="relative">
+        <button id="dropdownButton" class="text-white hover:text-[#27ae60] inline-flex items-center">
+          Permis
+          <svg class="w-2.5 h-2.5 ms-1 mt-0.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+          </svg>
+        </button>
+
+        <div id="dropdownMenu" class="hidden absolute top-full mt-2 bg-zinc-800 text-sm rounded shadow w-48 z-50">
+          <a href="soon.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Port d'Armes</a>
+          <a href="soon.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Permis de Chasse</a>
+        </div>
+      </div>
+
+      <a href="soon.html" class="hover:text-[#27ae60]">Stand de tir</a>
       <a href="contact.html" class="hover:text-[#27ae60]">Contact</a>
     </nav>
   </div>
@@ -50,14 +65,18 @@
   <div id="mobileMenu" class="sm:hidden hidden flex-col gap-4 px-6 pb-4 bg-black border-t border-zinc-800">
     <a href="index.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Accueil</a>
     <a href="catalogue.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Catalogue</a>
-    <a href="permis_port_armes.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Permis Port
-      d'Armes</a>
-    <a href="permis_chasse.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Permis de Chasse</a>
+
+    <!-- Permis (mobile version, sans dropdown) -->
+    <div class="py-2 border-b border-zinc-700">
+      <p class="uppercase text-sm text-gray-400 mb-1">Permis</p>
+      <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Port d'Armes</a>
+      <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Permis de Chasse</a>
+    </div>
+
+    <a href="soon.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Stand de tir</a>
     <a href="contact.html" class="block py-2 hover:text-[#27ae60]">Contact</a>
   </div>
 </header>
-
-
 
 <!-- Hero -->
 <section class="h-[70vh] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/ammu_nord_banner.png');">
@@ -122,11 +141,26 @@
 <script>
   const burger = document.getElementById('burger');
   const mobileMenu = document.getElementById('mobileMenu');
+  const dropdownBtn = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
 
   burger.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
+
+  dropdownBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Optional: Close dropdown if you click outside
+  document.addEventListener('click', (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
 </script>
+
 
 </body>
 </html>
