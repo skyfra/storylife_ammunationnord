@@ -139,6 +139,7 @@
 </footer>
 
 <script>
+
   const burger = document.getElementById('burger');
   const mobileMenu = document.getElementById('mobileMenu');
   const dropdownBtn = document.getElementById('dropdownButton');
@@ -153,12 +154,12 @@
     dropdownMenu.classList.toggle('hidden');
   });
 
-  // Optional: Close dropdown if you click outside
   document.addEventListener('click', (e) => {
     if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
       dropdownMenu.classList.add('hidden');
     }
   });
+
 </script>
 
 
