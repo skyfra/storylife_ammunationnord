@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stand de Tir – AmmuNation Blaine County</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+        body {
+            font-family: 'Staatliches', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-zinc-900 text-gray-100">
+
+<!-- Header -->
+<header class="bg-black border-b border-zinc-700 relative z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <!-- Logo + Titre -->
+        <div class="flex items-center gap-4">
+            <a href="index.html">
+                <img src="images/ammu_nord.png" alt="Logo" class="h-10 w-auto"/>
+            </a>
+            <a href="index.html" class="text-xl sm:text-2xl text-[#27ae60] hover:text-[#2ecc71] transition">
+                AmmuNation - Blaine County (Nord)
+            </a>
+        </div>
+
+        <!-- Burger icon -->
+        <button id="burger" class="text-white sm:hidden focus:outline-none">
+            <svg class="w-8 h-8" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+
+        <!-- Desktop menu -->
+        <nav class="hidden sm:flex items-center gap-6 text-base uppercase tracking-wide relative">
+            <a href="index.html" class="hover:text-[#27ae60]">Accueil</a>
+            <a href="catalogue.html" class="hover:text-[#27ae60]">Catalogue</a>
+
+            <!-- Dropdown -->
+            <div class="relative">
+                <button id="dropdownButton" class="text-white hover:text-[#27ae60] inline-flex items-center">
+                    Permis
+                    <svg class="w-2.5 h-2.5 ms-1 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+                    </svg>
+                </button>
+
+                <div id="dropdownMenu" class="hidden absolute top-full mt-2 bg-zinc-800 text-sm rounded shadow w-48 z-50">
+                    <a href="soon.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Port d'Armes</a>
+                    <a href="soon.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Permis de Chasse</a>
+                </div>
+            </div>
+
+            <a href="stand_de_tir.html" class="hover:text-[#27ae60]">Stand de tir</a>
+            <a href="contact.html" class="hover:text-[#27ae60]">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="sm:hidden hidden flex-col gap-4 px-6 pb-4 bg-black border-t border-zinc-800">
+        <a href="index.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Accueil</a>
+        <a href="catalogue.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Catalogue</a>
+
+        <!-- Permis (mobile version, sans dropdown) -->
+        <div class="py-2 border-b border-zinc-700">
+            <p class="uppercase text-sm text-gray-400 mb-1">Permis</p>
+            <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Port d'Armes</a>
+            <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Permis de Chasse</a>
+        </div>
+
+        <a href="soon.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Stand de tir</a>
+        <a href="contact.html" class="block py-2 hover:text-[#27ae60]">Contact</a>
+    </div>
+</header>
+
+<!-- Bannière -->
+<section class="h-[50vh] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/ammu_nord_banner.png');">
+    <div class="bg-black bg-opacity-70 p-8 rounded">
+        <h1 class="text-4xl sm:text-5xl text-[#27ae60] font-bold mb-2">Stand de Tir</h1>
+        <p class="text-xl">Maîtrisez vos armes pour tirer en toute sécurité</p>
+    </div>
+</section>
+
+<!-- Infos -->
+<section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-4">Tarifs & Objectifs</h2>
+    <p class="text-lg text-gray-300 mb-6">Prix : <span class="text-[#27ae60] font-bold">8000$</span> / session</p>
+    <p class="text-base text-gray-400 leading-relaxed">
+        Notre stand de tir est l’endroit idéal pour améliorer votre précision, apprendre à contrôler le recul, et tester différentes armes dans un cadre sécurisé.
+        <br />Choisissez vos armes parmi un large catalogue, classé par type et catégorie légale.
+    </p>
+</section>
+
+<!-- Armes disponibles -->
+<section class="bg-zinc-800 py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl text-center text-[#27ae60] mb-10">Catalogue d'Armes Disponibles</h2>
+
+        <!-- Catégorie 2B – Armes de poing -->
+        <div class="mb-10">
+            <h3 class="text-2xl text-[#27ae60] border-b border-zinc-600 pb-2 mb-4">Cat. 2B - Armes de Poing</h3>
+            <ul class="grid md:grid-cols-3 gap-4 text-gray-200 text-center">
+                <li class="bg-zinc-700 p-4 rounded">Glock 17</li>
+                <li class="bg-zinc-700 p-4 rounded">Glock 19 Gen4</li>
+                <li class="bg-zinc-700 p-4 rounded">Beretta 92FS</li>
+                <li class="bg-zinc-700 p-4 rounded">Pistolet Calibre .50</li>
+                <li class="bg-zinc-700 p-4 rounded">Pistolet de Précision</li>
+            </ul>
+        </div>
+
+        <!-- Catégorie 3 – Armes Lourdes -->
+        <div class="mb-10">
+            <h3 class="text-2xl text-[#27ae60] border-b border-zinc-600 pb-2 mb-4">Cat. 3 - Armes Lourdes</h3>
+
+            <!-- Mitraillettes / SMG -->
+            <h4 class="text-xl text-gray-300 mb-2">Mitraillettes & SMG</h4>
+            <ul class="grid md:grid-cols-3 gap-4 text-gray-200 text-center mb-6">
+                <li class="bg-zinc-700 p-4 rounded">Micro Uzi</li>
+                <li class="bg-zinc-700 p-4 rounded">PMSIG</li>
+                <li class="bg-zinc-700 p-4 rounded">Tec-9</li>
+                <li class="bg-zinc-700 p-4 rounded">MP5</li>
+            </ul>
+
+            <!-- Fusils d’assaut -->
+            <h4 class="text-xl text-gray-300 mb-2">Fusils d'Assaut</h4>
+            <ul class="grid md:grid-cols-3 gap-4 text-gray-200 text-center mb-6">
+                <li class="bg-zinc-700 p-4 rounded">AK-U</li>
+                <li class="bg-zinc-700 p-4 rounded">ARX - Scar</li>
+            </ul>
+        </div>
+
+        <!-- Catégorie 3 – Fusils de chasse -->
+        <div>
+            <h3 class="text-2xl text-[#27ae60] border-b border-zinc-600 pb-2 mb-4">Cat. 3 - Fusils de Chasse</h3>
+            <ul class="grid md:grid-cols-3 gap-4 text-gray-200 text-center">
+                <li class="bg-zinc-700 p-4 rounded">Fusil à double canon A</li>
+                <li class="bg-zinc-700 p-4 rounded">Fusil à canon scié A</li>
+                <li class="bg-zinc-700 p-4 rounded">Remington</li>
+                <li class="bg-zinc-700 p-4 rounded">Fusil à pompe bullpup</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="bg-black py-16 px-6 text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-6">Prêt à tirer ?</h2>
+    <p class="text-base text-gray-300 mb-6">Contactez-nous pour réserver votre session ou pour toute question.</p>
+    <a href="contact.html" class="inline-block bg-[#27ae60] hover:bg-[#2ecc71] text-black px-6 py-3 rounded-full font-semibold transition">
+        Nous Contacter
+    </a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-zinc-950 text-gray-500 text-center py-6 text-sm">
+    <p>&copy; 2025 AmmuNation Blaine County – Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
