@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Permis de Port d’Arme – AmmuNation Blaine County</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    body {
+      font-family: 'Staatliches', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-zinc-900 text-gray-100">
+
+<!-- Header -->
+<header class="bg-black border-b border-zinc-700 relative z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo + Titre -->
+    <div class="flex items-center gap-4">
+      <a href="index.html">
+        <img src="images/ammu_nord.png" alt="Logo" class="h-10 w-auto"/>
+      </a>
+      <a href="index.html" class="text-xl sm:text-2xl text-[#27ae60] hover:text-[#2ecc71] transition">
+        AmmuNation - Blaine County (Nord)
+      </a>
+    </div>
+
+    <!-- Burger icon -->
+    <button id="burger" class="text-white sm:hidden focus:outline-none">
+      <svg class="w-8 h-8" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Desktop menu -->
+    <nav class="hidden sm:flex items-center gap-6 text-base uppercase tracking-wide relative">
+      <a href="index.html" class="hover:text-[#27ae60]">Accueil</a>
+      <a href="catalogue.html" class="hover:text-[#27ae60]">Catalogue</a>
+
+      <!-- Dropdown -->
+      <div class="relative">
+        <button id="dropdownButton" class="text-white hover:text-[#27ae60] inline-flex items-center">
+          Permis
+          <svg class="w-2.5 h-2.5 ms-1 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+          </svg>
+        </button>
+
+        <div id="dropdownMenu" class="hidden absolute top-full mt-2 bg-zinc-800 text-sm rounded shadow w-48 z-50">
+          <a href="permis_port_armes.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Port d'Armes</a>
+          <a href="permis_chasse.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Chasse</a>
+        </div>
+      </div>
+
+      <a href="stand_de_tir.html" class="hover:text-[#27ae60]">Stand de tir</a>
+      <a href="contact.html" class="hover:text-[#27ae60]">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="sm:hidden hidden flex-col gap-4 px-6 pb-4 bg-black border-t border-zinc-800">
+    <a href="index.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Accueil</a>
+    <a href="catalogue.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Catalogue</a>
+
+    <!-- Permis (mobile version, sans dropdown) -->
+    <div class="py-2 border-b border-zinc-700">
+      <p class="uppercase text-sm text-gray-400 mb-1">Permis</p>
+      <a href="permis_port_armes.html" class="block py-1 hover:text-[#27ae60]">Port d'Armes</a>
+      <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Permis de Chasse</a>
+    </div>
+
+    <a href="stand_de_tir.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Stand de tir</a>
+    <a href="contact.html" class="block py-2 hover:text-[#27ae60]">Contact</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="h-[50vh] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/ammu_nord_banner.png');">
+  <div class="bg-black bg-opacity-70 p-8 rounded">
+    <h1 class="text-4xl sm:text-5xl text-[#27ae60] font-bold mb-2">Permis de Port d’Arme</h1>
+    <p class="text-xl">Protégez-vous en toute légalité</p>
+  </div>
+</section>
+
+<!-- Présentation -->
+<section class="py-16 px-6 bg-zinc-900 text-center text-gray-100">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl text-[#27ae60] mb-4">Obtenez votre PPA</h2>
+    <p class="text-lg text-gray-300 mb-6">
+      Le Permis de Port d’Arme (PPA) permet à un citoyen de porter une arme de poing pour sa protection personnelle,
+      dans un cadre strictement réglementé. Il nécessite une formation complète ainsi qu'une évaluation théorique et psychotechnique.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-6 mt-10 text-left">
+      <div class="bg-zinc-800 p-6 rounded-lg">
+        <h3 class="text-2xl text-[#27ae60] mb-4 text-center">📝 Conditions</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-300 text-left">
+          <li>Casier judiciaire vierge (SAPD)</li>
+          <li>Visite médicale + test psychotechnique validés (SAMD)</li>
+          <li>Suivre la formation théorique obligatoire</li>
+          <li>Réussir l’évaluation finale avec un score suffisant</li>
+        </ul>
+      </div>
+      <div class="bg-zinc-800 p-6 rounded-lg">
+        <h3 class="text-2xl text-[#27ae60] mb-4 text-center">💵 Coûts</h3>
+        <ul class="space-y-2 text-gray-200 text-left">
+          <li><strong>Casier judiciaire :</strong> 5 000$</li>
+          <li><strong>Visite médicale + test psycho :</strong> 11 500$</li>
+          <li><strong>Formation AmmuNation :</strong> 10 000$</li>
+          <li><strong>Fourniture Beretta (chargé) :</strong> 54 500$</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Règles ISTC -->
+<!-- Règles ISTC -->
+<section class="bg-zinc-800 py-16 px-6 text-center text-gray-100">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl text-[#27ae60] mb-8">🛡️ Règles fondamentales de sécurité (ISTC)</h2>
+    <ul class="list-disc list-inside space-y-3 text-lg text-left mx-auto max-w-xl">
+      <li>Une arme doit toujours être considérée comme chargée.</li>
+      <li>Ne jamais pointer ou laisser pointer le canon d'une arme sur quelqu'un ou quelque chose qu'on ne veuille pas détruire.</li>
+      <li>Garder l'index hors de la détente tant que les organes de visée ne sont pas sur l'objectif.</li>
+      <li>Être sûr de son objectif et de son environnement.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- C.E.V.I.T.A.L -->
+<!-- C.E.V.I.T.A.L -->
+<section class="bg-zinc-900 py-16 px-6 text-center text-gray-100">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl text-[#27ae60] mb-8">🎯 La méthode C.E.V.I.T.A.L</h2>
+    <p class="text-gray-300 mb-6 max-w-3xl mx-auto">
+      Ce sigle vous aide à structurer votre comportement lors d’une séance de tir ou d’un acte de chasse, pour allier précision, sécurité et éthique.
+    </p>
+    <div class="grid md:grid-cols-2 gap-6 text-left mt-8">
+      <ul class="text-gray-200 space-y-2">
+        <li><strong>C – Certitude :</strong> Être sûr de sa cible, de son environnement.</li>
+        <li><strong>É – Élévation :</strong> Gérer la hauteur de tir, anticiper les trajectoires.</li>
+        <li><strong>V – Visée :</strong> Viser précisément sans précipitation.</li>
+        <li><strong>I – Index :</strong> Position du doigt hors de la détente jusqu'à la décision de tir.</li>
+      </ul>
+      <ul class="text-gray-200 space-y-2">
+        <li><strong>T – Tir :</strong> Exécution du tir en respectant les règles de sécurité.</li>
+        <li><strong>A – Analyse :</strong> Évaluer l’impact, observer les résultats.</li>
+        <li><strong>L – Latéral :</strong> Scanner l’environnement autour pour détecter d’autres mouvements ou dangers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Légitime défense -->
+<section class="bg-zinc-800 py-16 px-6 text-center text-gray-100">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl text-[#27ae60] mb-8">⚖️ Les 6 règles de la légitime défense</h2>
+    <ul class="list-disc list-inside space-y-3 text-lg text-left mx-auto max-w-xl">
+      <li>L’attaque doit être injustifiée (sans motif valable).</li>
+      <li>La défense doit se faire pour soi ou pour autrui.</li>
+      <li>La défense doit être immédiate (pas de vengeance).</li>
+      <li>La défense doit être nécessaire (la seule solution).</li>
+      <li>La défense doit être proportionnelle à l’attaque.</li>
+      <li>La défense d’un bien ne doit pas entraîner la mort d’une personne.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Armes autorisées -->
+<section class="bg-black py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-8">Armes autorisées avec un PPA</h2>
+    <div class="grid md:grid-cols-2 gap-6 justify-center text-lg text-white">
+      <div class="bg-zinc-700 p-4 rounded">Pistolet (Beretta 92FS)</div>
+      <div class="bg-zinc-700 p-4 rounded">Pistolet de détresse</div>
+    </div>
+  </div>
+</section>
+
+<!-- Appel à l'action -->
+<section class="bg-zinc-800 py-16 px-6 text-center">
+  <h2 class="text-3xl text-[#27ae60] mb-6">Besoin de protection légale ?</h2>
+  <p class="text-base text-gray-300 mb-6">Notre équipe vous accompagne dans toutes les étapes d’obtention du PPA. Contactez-nous dès maintenant.</p>
+  <a href="contact.html" class="inline-block bg-[#27ae60] hover:bg-[#2ecc71] text-black px-6 py-3 rounded-full font-semibold transition">
+    Nous Contacter
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-zinc-950 text-gray-500 text-center py-6 text-sm">
+  <p>&copy; 2025 AmmuNation Blaine County – Tous droits réservés.</p>
+</footer>
+
+<script>
+
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const dropdownBtn = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  dropdownBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+</script>
+
+</body>
+</html>
