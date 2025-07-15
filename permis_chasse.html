@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Permis de Chasse – AmmuNation Blaine County</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+    body {
+      font-family: 'Staatliches', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-zinc-900 text-gray-100">
+
+<!-- Header -->
+<header class="bg-black border-b border-zinc-700 relative z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo + Titre -->
+    <div class="flex items-center gap-4">
+      <a href="index.html">
+        <img src="images/ammu_nord.png" alt="Logo" class="h-10 w-auto"/>
+      </a>
+      <a href="index.html" class="text-xl sm:text-2xl text-[#27ae60] hover:text-[#2ecc71] transition">
+        AmmuNation - Blaine County (Nord)
+      </a>
+    </div>
+
+    <!-- Burger icon -->
+    <button id="burger" class="text-white sm:hidden focus:outline-none">
+      <svg class="w-8 h-8" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Desktop menu -->
+    <nav class="hidden sm:flex items-center gap-6 text-base uppercase tracking-wide relative">
+      <a href="index.html" class="hover:text-[#27ae60]">Accueil</a>
+      <a href="catalogue.html" class="hover:text-[#27ae60]">Catalogue</a>
+
+      <!-- Dropdown -->
+      <div class="relative">
+        <button id="dropdownButton" class="text-white hover:text-[#27ae60] inline-flex items-center">
+          Permis
+          <svg class="w-2.5 h-2.5 ms-1 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1l4 4 4-4"/>
+          </svg>
+        </button>
+
+        <div id="dropdownMenu" class="hidden absolute top-full mt-2 bg-zinc-800 text-sm rounded shadow w-48 z-50">
+          <a href="soon.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Port d'Armes</a>
+          <a href="permis_chasse.html" class="block px-4 py-2 hover:bg-zinc-700 text-gray-200">Permis de Chasse</a>
+        </div>
+      </div>
+
+      <a href="stand_de_tir.html" class="hover:text-[#27ae60]">Stand de tir</a>
+      <a href="contact.html" class="hover:text-[#27ae60]">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="sm:hidden hidden flex-col gap-4 px-6 pb-4 bg-black border-t border-zinc-800">
+    <a href="index.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Accueil</a>
+    <a href="catalogue.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Catalogue</a>
+
+    <!-- Permis (mobile version, sans dropdown) -->
+    <div class="py-2 border-b border-zinc-700">
+      <p class="uppercase text-sm text-gray-400 mb-1">Permis</p>
+      <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Port d'Armes</a>
+      <a href="soon.html" class="block py-1 hover:text-[#27ae60]">Permis de Chasse</a>
+    </div>
+
+    <a href="soon.html" class="block py-2 border-b border-zinc-700 hover:text-[#27ae60]">Stand de tir</a>
+    <a href="contact.html" class="block py-2 hover:text-[#27ae60]">Contact</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="h-[50vh] bg-cover bg-center flex items-center justify-center text-white text-center" style="background-image: url('images/ammu_nord_banner.png');">
+  <div class="bg-black bg-opacity-70 p-8 rounded">
+    <h1 class="text-4xl sm:text-5xl text-[#27ae60] font-bold mb-2">Permis de Chasse</h1>
+    <p class="text-xl">Formez-vous pour la chasse légale et encadrée</p>
+  </div>
+</section>
+
+<!-- Présentation -->
+<section class="py-16 px-6 max-w-5xl mx-auto text-center">
+  <h2 class="text-3xl text-[#27ae60] mb-4">Passez votre permis de chasse</h2>
+  <p class="text-lg text-gray-300 mb-6">
+    Le permis de chasse permet de manier le <strong>Mousquet</strong>, une arme à feu réglementée destinée exclusivement à la pratique de la chasse dans un cadre légal.
+    Ce permis vous autorise à pratiquer en toute légalité, après formation et validation.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-6 mt-10 text-left">
+    <div class="bg-zinc-800 p-6 rounded-lg">
+      <h3 class="text-2xl text-[#27ae60] mb-4">📝 Conditions</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li>Suivre la formation théorique</li>
+        <li>Réussir l’évaluation finale avec un score suffisant</li>
+      </ul>
+    </div>
+    <div class="bg-zinc-800 p-6 rounded-lg">
+      <h3 class="text-2xl text-[#27ae60] mb-4">💵 Tarifs</h3>
+      <ul class="space-y-2 text-gray-200">
+        <li><strong>Évaluation :</strong> 10 000$ <span class="text-sm text-gray-400">(à repayer en cas d'échec)</span></li>
+        <li><strong>Kit de chasse :</strong> 80 000$</li>
+      </ul>
+      <p class="mt-3 text-sm text-gray-400">
+        Le kit inclut le Mousquet, une première recharge de 240 munitions, et un couteau à cran d'arrêt.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Zone autorisée -->
+<section class="bg-zinc-800 py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl text-[#27ae60] mb-6 text-center">📍 Zone de chasse autorisée</h2>
+    <p class="text-gray-300 text-lg mb-4">
+      La seule zone actuellement autorisée sur le territoire de San Andreas est le <strong>Parc National du Mont Chiliad</strong>.
+    </p>
+    <ul class="list-disc list-inside text-gray-300 space-y-2 mb-6">
+      <li>
+        📍 <a href="https://docs.google.com/spreadsheets/d/1rMNCHrJsQHDISyFO1zezDQQ8LCTAuuAC6Y5EtPWkTkg/edit?gid=748175621#gid=748175621" class="text-[#27ae60] underline" target="_blank">Carte du parc (C.ENV)</a>
+      </li>
+      <li>
+        📜 <a href="https://drive.google.com/file/d/19jc8RehXuiMujooj7aTGtaA9FBgWJXrJ/view" class="text-[#27ae60] underline" target="_blank">Règlement intérieur</a>
+      </li>
+    </ul>
+    <div class="bg-zinc-900 p-6 rounded-lg shadow text-sm text-gray-300 space-y-3">
+      <p>⚠️ <strong>Interdiction formelle</strong> de tirer sur un animal accompagné de ses petits.</p>
+      <p>🛑 Le <strong>cougar</strong> est une espèce protégée : il ne peut être abattu qu’en cas de <em>légitime défense</em>.</p>
+      <p>🍖 <strong>Quota maximal autorisé :</strong> 35 pièces de viande. En cas de dépassement :</p>
+      <ul class="list-disc list-inside ml-4">
+        <li>400$/viande (article L.154 du Code de l’Environnement)</li>
+        <li>Au-delà de 215 pièces : <strong>écocide (crime environnemental)</strong>, 250 000$ d’amende + passage devant le procureur</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- C.E.V.I.T.A.L -->
+<section class="bg-zinc-900 py-16 px-6">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-8">🎯 La méthode C.E.V.I.T.A.L</h2>
+    <p class="text-gray-300 mb-4">
+      Ce sigle vous aide à structurer votre comportement lors d’une séance de tir ou d’un acte de chasse, pour allier précision, sécurité et éthique.
+    </p>
+    <div class="grid md:grid-cols-2 gap-6 text-left mt-8">
+      <ul class="text-gray-200 space-y-2">
+        <li><strong>C – Certitude :</strong> Être sûr de sa cible, de son environnement.</li>
+        <li><strong>É – Élévation :</strong> Gérer la hauteur de tir, anticiper les trajectoires.</li>
+        <li><strong>V – Visée :</strong> Viser précisément sans précipitation.</li>
+        <li><strong>I – Index :</strong> Position du doigt hors de la détente jusqu'à la décision de tir.</li>
+      </ul>
+      <ul class="text-gray-200 space-y-2">
+        <li><strong>T – Tir :</strong> Exécution du tir en respectant les règles de sécurité.</li>
+        <li><strong>A – Analyse :</strong> Évaluer l’impact, observer les résultats.</li>
+        <li><strong>L – Latéral :</strong> Scanner l’environnement autour pour détecter d’autres mouvements ou dangers.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Arme autorisée -->
+<section class="bg-zinc-800 py-16 px-6">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl text-[#27ae60] mb-8">Arme autorisée avec le permis</h2>
+    <div class="flex justify-center">
+      <div class="bg-zinc-700 px-6 py-4 rounded text-xl font-semibold text-white">
+        Mousquet
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Appel à l'action -->
+<section class="bg-black py-16 px-6 text-center">
+  <h2 class="text-3xl text-[#27ae60] mb-6">Prêt à entrer dans la nature ?</h2>
+  <p class="text-base text-gray-300 mb-6">Contactez notre équipe pour vous inscrire à la prochaine session de formation.</p>
+  <a href="contact.html" class="inline-block bg-[#27ae60] hover:bg-[#2ecc71] text-black px-6 py-3 rounded-full font-semibold transition">
+    Nous Contacter
+  </a>
+</section>
+
+<!-- Footer -->
+<footer class="bg-zinc-950 text-gray-500 text-center py-6 text-sm">
+  <p>&copy; 2025 AmmuNation Blaine County – Tous droits réservés.</p>
+</footer>
+
+<script>
+
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const dropdownBtn = document.getElementById('dropdownButton');
+  const dropdownMenu = document.getElementById('dropdownMenu');
+
+  burger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  dropdownBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+
+</script>
+
+</body>
+</html>
